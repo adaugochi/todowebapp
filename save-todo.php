@@ -1,7 +1,6 @@
 <?php
-
+session_start();
 require "db.php";
-require "addModal.php";
 
 if (isset($_POST['submit'])) {
     try {
@@ -23,6 +22,7 @@ if (isset($_POST['submit'])) {
 
         $statement = $connection->prepare($sql);
         $statement->execute($newTodo);
+        $_SESSION['success'] = "Todo item added successfully !!!";
         header('Location: ' . $_SERVER['HTTP_REFERER']);
     } catch (PDOException $error) {
         echo $sql . "<br>" . $error->getMessage();

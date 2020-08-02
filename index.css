@@ -1,0 +1,14 @@
+.badge {
+    color: white;
+    text-transform: uppercase;
+}
+.dropdown-item {
+    cursor: pointer;
+}
+.badge-pending {
+    background-color: orange;
+}
+
+.badge-completed {
+    background-color: #28a745;
+}

@@ -11,21 +11,16 @@
 
             <!-- Modal body -->
             <div class="modal-body">
-                <form action="save-todo.php" method="post">
+                <form action="delete-todo.php" method="post">
                     <div class="form-group">
                         <input type="hidden" class="id" name="id">
                         <p>Are you sure to want to delete this to-do item?</p>
                     </div>
 
-                    <input type="submit" name="submit" class="btn btn-success" value="YES">
+                    <input type="submit" name="delete" class="btn btn-success" value="YES">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
                 </form>
             </div>
-
-            <!-- Modal footer -->
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
-            </div>
-
         </div>
     </div>
 </div>

@@ -5,7 +5,7 @@
 - Run the create.php to create a table
 - Lastly, run the index.php file
 
-##Languages
+## Languages
 - PHP
 - jQuery
 - Bootstrap

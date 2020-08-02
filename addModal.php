@@ -22,15 +22,10 @@
                         <input type="text" class="form-control" id="todo" name="to_do_item">
                     </div>
 
-                    <input type="submit" name="submit" class="btn btn-primary" value="SUBMIT">
+                    <input type="submit" name="submit" class="btn btn-success" value="Save">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 </form>
             </div>
-
-            <!-- Modal footer -->
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            </div>
-
         </div>
     </div>
 </div>
