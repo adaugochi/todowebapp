@@ -17,7 +17,7 @@
                         <p>Are you sure to want to delete this to-do item?</p>
                     </div>
 
-                    <input type="submit" name="delete" class="btn btn-success" value="YES">
+                    <input type="submit" name="delete" class="btn btn-success" value="Yes">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
                 </form>
             </div>
