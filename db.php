@@ -13,7 +13,7 @@ $repository = RepositoryBuilder::createWithNoAdapters()
     ->immutable()
     ->make();
 
-$dotenv = Dotenv::create($repository, __DIR__);
+$dotenv = Dotenv::create($repository, __DIR__ . '\env');
 $dotenv->load();
 
 $hostname = getenv('DB_HOSTNAME');
