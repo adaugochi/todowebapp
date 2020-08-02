@@ -1,14 +1,14 @@
 <?php
 
-$hostname = "localhost";
-$username = "root";
-$password = "admin";
-$dbname = "post";
+$hostname = getenv('DB_HOSTNAME');
+$username = getenv('DB_USERNAME');
+$password = getenv('DB_PASSWORD');
+$dbname = getenv('DB_DATABASE');
 $dsn = "mysql:host=$hostname;dbname=$dbname";
 
 /**
  * This file Handles Php Data Object connection to Db
- * which can be of any type e.g SQL db and runs commands in init.sl
+ * which can be of any type e.g SQL db and runs commands in init.sql
  */
 try {
     $connection = new PDO($dsn, $username, $password);
