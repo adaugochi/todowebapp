@@ -1,5 +1,21 @@
 <?php
 
+use Dotenv\Dotenv;
+use Dotenv\Repository\Adapter\EnvConstAdapter;
+use Dotenv\Repository\Adapter\PutenvAdapter;
+use Dotenv\Repository\RepositoryBuilder;
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+$repository = RepositoryBuilder::createWithNoAdapters()
+    ->addAdapter(EnvConstAdapter::class)
+    ->addWriter(PutenvAdapter::class)
+    ->immutable()
+    ->make();
+
+$dotenv = Dotenv::create($repository, __DIR__);
+$dotenv->load();
+
 $hostname = getenv('DB_HOSTNAME');
 $username = getenv('DB_USERNAME');
 $password = getenv('DB_PASSWORD');

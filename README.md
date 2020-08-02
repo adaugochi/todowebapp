@@ -13,6 +13,7 @@ Make a copy of `.env.example` to `.env` in the env directory.
 ## Guideline
 - Create a database
 - Add the require data in `.env` file
+- Run `composer install`
 - Run the `create.php` on the browser to create a table: e.g `localhost/Todo/create.php`
 - Lastly, run the `index.php` file: e.g `localhost/Todo/index.php`
 

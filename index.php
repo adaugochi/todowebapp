@@ -29,7 +29,7 @@ try {
 </head>
 <body>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <div class="mx-4">
+        <div class="container">
             <!-- Brand -->
             <a class="navbar-brand" href="#">TO-DO Web App</a>
         </div>
